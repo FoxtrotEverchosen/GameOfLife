@@ -35,7 +35,7 @@ def main():
     # 50 - arbitrary number
     max_chars = (WINDOW_WIDTH//(CELL_SIZE*5+1)) * (WINDOW_HEIGHT//(CELL_SIZE*5+2)) - 50
     custom = input("Do you want to display some text on grid?  (y/n): ")
-    text = "I ~ Python"
+    text = "~ Game Of Life"
 
     if custom.lower() == "y":
         text = input(f"What's the text? (limit of {max_chars} characters): ")
@@ -46,6 +46,7 @@ def main():
     # Initialize pygame
     pygame.init()
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+    pygame.display.set_caption("Game Of Life")
     clock = pygame.time.Clock()
 
     # Create grid of random values
