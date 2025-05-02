@@ -33,12 +33,12 @@ def main():
 
     # text to display on zeroth generation
     # 50 - arbitrary number
-    max_chars = (WINDOW_WIDTH//(CELL_SIZE*5+1)) * (WINDOW_HEIGHT//(CELL_SIZE*5+2)) - 50
-    custom = input("Do you want to display some text on grid?  (y/n): ")
+    max_chars = (WINDOW_WIDTH//(CELL_SIZE*5+2)) * (WINDOW_HEIGHT//(CELL_SIZE*5+3)) - 50
+    custom = input("Do you want to display custom text on grid?  (y/n): ")
     text = "~ Game Of Life"
 
     if custom.lower() == "y":
-        text = input(f"What's the text? (limit of {max_chars} characters): ")
+        text = input(f"What's your text? : ")
 
         if len(text) > max_chars:
             text = text[:max_chars]
@@ -68,8 +68,11 @@ def main():
             # turn on character cells
             for r in range(len(g)):
                 for c in range(len(g[0])):
-                    grid[c_row, c_col] = g[r][c]
-                    c_col += 1
+                    try:
+                        grid[c_row, c_col] = g[r][c]
+                        c_col += 1
+                    except IndexError:
+                        raise Exception("Provided text was too long, please choose something shorter")
 
                 # after imprinting full row go to the beginning of the next one
                 c_row += 1
