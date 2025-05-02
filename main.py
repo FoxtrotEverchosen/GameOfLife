@@ -38,9 +38,6 @@ def main():
     if custom.lower() == "y":
         text = input(f"What's your text? : ")
 
-        if len(text) > max_chars:
-            text = text[:max_chars]
-
     # Initialize pygame
     pygame.init()
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
