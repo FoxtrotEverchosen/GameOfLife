@@ -13,5 +13,10 @@ This version allows user to:
 - Toggle state of individual cells - **left click** (only when paused)
 
 After downloading this repository, you can run the game locally. Make sure you have Python 3.9 or newer installed.
-To install required dependencies run `pip install -r requirements.txt` (use virtual environment if possible). 
-If you're using uv [for](https://github.com/astral-sh/uv) package management you can simply run the project with `uv run main.py`
+To install required dependencies run following command (use virtual environment if possible):
+
+`pip install -r requirements.txt` 
+
+If you're using [uv](https://github.com/astral-sh/uv) for package management you can simply run the project with: 
+
+`uv run main.py`
