@@ -32,8 +32,6 @@ def main():
     text_start = (rows//6, 5)
 
     # text to display on zeroth generation
-    # 50 - arbitrary number
-    max_chars = (WINDOW_WIDTH//(CELL_SIZE*5+2)) * (WINDOW_HEIGHT//(CELL_SIZE*5+3)) - 50
     custom = input("Do you want to display custom text on grid?  (y/n): ")
     text = "~ Game Of Life"
 
