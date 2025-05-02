@@ -7,7 +7,7 @@ The Game of Life follows simple rules where the state of each cell evolves with 
 4. A live cell survives if it has two or three live neighbours
 
 This version allows user to:
-- pause game - press the **Space** bar
+- pause game - press the **Space** bar (**Game starts paused**)
 - randomize the board - press the **R** key
 - clear the board (kill all cells) - press the **Z** key (only when paused)
 - Toggle state of individual cells - **left click** (only when paused)
