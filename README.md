@@ -17,6 +17,10 @@ To install required dependencies run following command (use virtual environment 
 
     pip install -r requirements.txt
 
+Then you can run the script directly from its directory 
+
+    python main.py 
+
 If you're using [uv](https://github.com/astral-sh/uv) for package management you can simply run the project with: 
 
     uv run main.py
